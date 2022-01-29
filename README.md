@@ -3,7 +3,7 @@ A wide variety of guided projects with real data in real-world scenarios.
 
 ## Hacker News:
 
-We'll compare the **two main types of posts** `Ask HN` and `Show HN` to determine the following:
+We'll compare the **two main types of posts** `Ask HN` and `Show HN` to answer the following questions.:
 
 - Do `Ask HN` or `Show HN` receive more **comments on average.**?
 
@@ -20,8 +20,6 @@ We'll compare the **two main types of posts** `Ask HN` and `Show HN` to determin
 -  **What are the most significant activity by user** in `Ask_posts` and in 'Show_posts`?
 
 -  **Who has been the most voted**, when they was and what was the title of the post?
-
-
 
 
 
