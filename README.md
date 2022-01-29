@@ -3,10 +3,15 @@ A wide variety of guided projects with real data in real-world scenarios.
 
 .
 ├── arbol_proyectos_finalizados
+
 ├── Esquema.ipynb
+
 ├── indices_html_en_documentos_jupyter
+
 ├── Listado_DQ_Data_Science_Projects
+
 │   └── Data_Science_Projects
+
 ├── Step_01
 │   ├── 01-Hacker News
 │   │   ├── Exploring Hacker News Post_DQ_finish.html
