@@ -1,4 +1,4 @@
-##  Python Introduction
+In this directory are the projects with which the following points have been worked:
 
 - Variables, Data Types, and Lists in Python.
 - For Loops and Conditional Statements in Python.
