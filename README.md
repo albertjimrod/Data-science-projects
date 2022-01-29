@@ -2,10 +2,10 @@
 A wide variety of guided projects with real data in real-world scenarios.
 
 .
-├── arbol_proyectos_finalizados
-├── Esquema.ipynb
-
-├── indices_html_en_documentos_jupyter
+>├── arbol_proyectos_finalizados
+>├── Esquema.ipynb
+>
+>├── indices_html_en_documentos_jupyter
 
 ├── Listado_DQ_Data_Science_Projects
 
