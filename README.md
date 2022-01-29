@@ -1,26 +1,30 @@
 # DataquestProjects
 A wide variety of guided projects with real data in real-world scenarios.
 
-## Hacker News:
+## Analyzing CIA Factbook Data Using SQL
 
-We'll compare the **two main types of posts** `Ask HN` and `Show HN` to answer the following questions.:
+## Answering Business Questions Using SQL
 
-- Do `Ask HN` or `Show HN` receive more **comments on average.**?
+## Popular Data Science Questions
 
-- Do **posts created at a certain time** receive more **comments on average.**?
+## Building a Spam Filter with Naive Bayes
 
-- What **type of comments on average** are the most abundant.
+## Finding the Best Markets to Advertise In
 
-- Analyze the **relationship** ( whether or not ) **between the time.**
+## Investigating Fandango Movie Ratings
 
-- **Which posts are created** and the **number of comments** they receive.
+## Mobile App for Lottery Addiction
 
-- **Who are the most relevant authors** in `Ask_posts` or  `Show_posts` on the forum?.
+## Winning Jeopardy
 
--  **What are the most significant activity by user** in `Ask_posts` and in 'Show_posts`?
+## Predicting Bike Rentals
 
--  **Who has been the most voted**, when they was and what was the title of the post?
+## Predicting Car Prices
 
+## Predicting House Sale Prices
 
+## Predicting the stock market
 
+## Building A Handwritten Digits Classifier
 
+## Creating a Kaggle Workflow
