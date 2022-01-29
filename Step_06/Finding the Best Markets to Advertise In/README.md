@@ -1,1 +1,1 @@
-
+Averages and Variability.
