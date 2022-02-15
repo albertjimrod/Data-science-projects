@@ -1,6 +1,6 @@
-## Hacker News:
+## [Hacker News](https://news.ycombinator.com/):
 
-We'll compare the **two main types of posts** `Ask HN` and `Show HN` to answer the following questions.:
+As first steps we'll compare the **two main types of posts** `Ask HN` and `Show HN` to answer the following questions:
 
 - Do `Ask HN` or `Show HN` receive more **comments on average.**?
 
