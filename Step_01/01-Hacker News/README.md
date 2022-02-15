@@ -17,3 +17,24 @@ As first steps we'll compare the **two main types of posts** `Ask HN` and `Show 
 - **What are the most significant activity by user** in `Ask_posts` and in 'Show_posts`?
 
 - **Who has been the most voted**, when they was and what was the title of the post?
+
+___
+
+### Data dicctionary:
+
+- `id`: the unique identifier from Hacker News for the post
+
+- `title`: the title of the post
+
+- `url`: the URL that the posts links to, if the post has a URL
+
+- `num_points`: the number of points the post acquired, calculated as the total number of upvotes minus the total number of downvotes
+
+- `num_comments`: the number of comments on the post
+
+- `author`: the username of the person who submitted the post
+
+- `created_at`: the date and time of the post's submission
+
+
+Where to find the [dataset](https://www.kaggle.com/hacker-news/hacker-news-posts)
