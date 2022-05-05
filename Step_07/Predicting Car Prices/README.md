@@ -16,7 +16,7 @@ the challenges I have encountered have been several:
 - Do a good data cleansing, and discover NaN values when the.info method tells us that all columns are fine.
 - create a mind map to see the relationship between the different functions, so that it is easier to see the relationships between the different functions and how I can reuse them or if they have been modified.
 -
-![]()
+![predicting.svg](predicting.svg)
 
 
 
