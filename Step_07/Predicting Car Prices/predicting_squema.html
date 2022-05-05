@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="treestyles.css" type="text/css"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!--This file has been created with toxhtml.xsl--><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><title>predicting</title><link rel="stylesheet" href="predicting_squema.html_files/treestyles.css" type="text/css" /><script type="text/javascript" src="predicting_squema.html_files/marktree.js"> 
+	</script></head><body><div class="basetop"><a onclick="expandAll(document.getElementById('base'))" href="#">Expand</a> -
+<a onclick="collapseAll(document.getElementById('base'))" href="#">Collapse</a></div><div class="basetext" id="base"><ul>
+	<li class="col" id="FMID_480867747FM"><div class="nodecontent">predicting</div>
+		<ul class="subexp">
+	<li class="exp" id="FMID_1196649621FM"><div class="nodecontent"><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">['symboling',
+ 'normalized_losses',
+ 'fuel_type',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'engine_size',
+ 'compression_ratio',
+ 'horsepower',
+ 'peak_rpm',
+ 'highway_liters100Km',
+ 'city_liters100Km',
+ 'tara'</font></pre></div>
+		<ul class="sub">
+	<li class="col" id="FMID_252368281FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;">Univariate model (k=5 default)</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1680923950FM"><div class="nodecontent"><p><b>def test_Univariate_model_k5(list_col):</b></p><p /><p>
+      graficos incluidos
+    </p><p /><p>
+      return lista_rmse_model_1, name_features_model_1
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_387128125FM"><div class="nodecontent" style="color:#990000;"><p><b>def knn_train_test_model_1(features, target_column_name, dataframe):</b></p><p /><p>
+      return rmse
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_68871976FM"><div class="nodecontent"><p><b>better_output = test_Univariate_model_k5(list_col)</b></p><p /><p>
+      best_rmse_value(better_output, store_rmse)
+    </p></div></li>
+	<li class="basic" id="FMID_150235298FM"><div class="nodecontent" style="color:#800080;font-size:117%;font-weight:bold;">4319.140524175805 engine_size</div></li></ul></li>
+	<li class="col" id="FMID_1480610085FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;">Univariate model (k=[1,3,5,7,9])</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_213866396FM"><div class="nodecontent"><p><b><font color="#44a8e6">def test_Univariate_model_k13579(list_col):</font></b></p><p /><p>
+      graficos incluidos
+    </p><p /><p>
+      return lista_rmse_model_1, name_features_model_1
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1181898444FM"><div class="nodecontent" style="color:#008080;"><p><b>def knn_train_test_model_2(features, target_column_name, dataframe, k):</b></p><p /><p>
+       return rmse, optimal_hp
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_705724828FM"><div class="nodecontent"><p>
+      best_rmse_value(better_output, store_rmse)
+    </p></div></li>
+	<li class="basic" id="FMID_1967783329FM"><div class="nodecontent" style="color:#800080;font-size:133%;font-weight:bold;">4319.140524175805 engine_size</div></li></ul></li>
+	<li class="col" id="FMID_925138418FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;">Multivariate all features k=5 </div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1350542595FM"><div class="nodecontent"><p><b>def test_Multivariate__model_k5(list_col): </b></p><p /><p>
+      return lista_rmse_model_1, name_features_model_1
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_967881002FM"><div class="nodecontent" style="color:#00b439;"><p><b>def knn_train_all_features(features, target_column_name, dataframe): </b></p><p /><p>
+      return rmse, optimal_hp
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_1304732969FM"><div class="nodecontent"><p>
+      best_rmse_value(better_output, store_rmse)
+    </p></div></li>
+	<li class="basic" id="FMID_852506915FM"><div class="nodecontent" style="color:#800080;font-size:117%;font-weight:bold;">4733.628590394608 All features</div></li></ul></li>
+	<li class="col" id="FMID_900131892FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;">Best 2 features k=5</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1402073459FM"><div class="nodecontent" style="color:#0000ff;"><p><b>def find_best_features_K_default(list_col):</b></p><p /><p>
+      return lista_rmse_model_1, name_features_model_1
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_287063243FM"><div class="nodecontent" style="color:#990000;"><p><b>def knn_train_test_model_1(features, target_column_name, dataframe):</b></p><p /><p>
+      return rmse
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_1047821362FM"><div class="nodecontent">def graphics(unpack):</div></li>
+	<li class="basic" id="FMID_460651972FM"><div class="nodecontent">best_rmse_value(better_output, store_rmse)</div></li>
+	<li class="basic" id="FMID_1129708015FM"><div class="nodecontent" style="color:#800080;font-size:117%;font-weight:bold;"> Best rmse value 4303.751448698439: K=default  Optimal feature: engine_size + fuel_type:  </div></li></ul></li></ul></li>
+	<li class="col" id="FMID_328506137FM"><div class="nodecontent"><p><font size="3">set_list_1= ['engine_size','fuel_type'] </font></p><p><font size="3">if len(set_list_1)&gt;0: </font></p><p><font size="3">    for erase in set_list_1: </font></p><p><font size="3">        list_col.remove(erase) </font></p><p /><p><font size="3">list_col </font></p><p /><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">['symboling',
+ 'normalized_losses',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'compression_ratio',
+ 'horsepower',
+ 'peak_rpm',
+ 'highway_liters100Km',
+ 'city_liters100Km',
+ 'tara']</font></pre></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_376236158FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;"><p>
+      Best 3 features k=5
+    </p></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_546617335FM"><div class="nodecontent"><p><font size="2">set_list_1= ['engine_size','fuel_type'] </font></p><p><font size="2">if len(set_list_1)&gt;0: </font></p><p><font size="2">    for erase in set_list_1: </font></p><p><font size="2">        list_col.remove(erase) </font></p><p /><p><font size="2">list_col </font></p><p /><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="2">['symboling',
+ 'normalized_losses',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'compression_ratio',
+ 'horsepower',
+ 'peak_rpm',
+ 'highway_liters100Km',
+ 'city_liters100Km',
+ 'tara']</font></pre><p /></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1713687731FM"><div class="nodecontent">set_list_1= ['engine_size','fuel_type']</div></li>
+	<li class="col" id="FMID_1506001625FM"><div class="nodecontent"><p>
+      def find_best_3features_K_default(list_col, set_list):
+    </p><p /><p>
+      return lista_rmse_model_1, name_features_model_1
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1030840631FM"><div class="nodecontent" /></li></ul></li>
+	<li class="basic" id="FMID_714572051FM"><div class="nodecontent">graphics(find_best_3features_K_default(list_col, set_list_1))</div></li>
+	<li class="basic" id="FMID_180320152FM"><div class="nodecontent">best_rmse_nhp(better_output, store_rmse)</div></li>
+	<li class="basic" id="FMID_327760453FM"><div class="nodecontent" style="color:#800080;font-size:117%;font-weight:bold;"> Best rmse value 4963.703694766741: K=default  Optimal feature: engine_size +  fuel_type +  city_liters100Km:</div></li></ul></li></ul></li></ul></li>
+	<li class="col" id="FMID_544591967FM"><div class="nodecontent"><p>
+      set_list_1= ['engine_size','fuel_type']
+    </p><p>
+      if len(set_list_1)&gt;0:
+    </p><p>
+          for erase in set_list_1:
+    </p><p>
+              list_col.remove(erase)
+    </p><p /><p>
+      list_col
+    </p><p /><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">['symboling',
+ 'normalized_losses',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'compression_ratio',
+ 'horsepower',
+ 'peak_rpm',
+ 'highway_liters100Km',
+ 'city_liters100Km',
+ 'tara']</font></pre></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1119076365FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;">Best 4 features k=5</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1639635037FM"><div class="nodecontent"><p><font size="3">set_list_1= ['engine_size','fuel_type'] </font></p><p><font size="3">if len(set_list_1)&gt;0: </font></p><p><font size="3">    for erase in set_list_1: </font></p><p><font size="3">        list_col.remove(erase) </font></p><p /><p><font size="3">list_col </font></p><p /><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">['symboling',
+ 'normalized_losses',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'compression_ratio',
+ 'horsepower',
+ 'peak_rpm',
+ 'highway_liters100Km',
+ 'city_liters100Km',
+ 'tara'</font></pre></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1283640653FM"><div class="nodecontent" style="color:#808080;">set_list_1 ['engine_size', 'fuel_type']</div></li>
+	<li class="col" id="FMID_1463553194FM"><div class="nodecontent" style="color:#0000ff;"><p><b>def find_best_features_K_default(list_col, set_list):</b></p><p /><p>
+      return lista_rmse_model_1, name_features_model_1, set_list
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_930377734FM"><div class="nodecontent" style="color:#800000;"><p><b>def knn_train_test_model_1(features, target_column_name, dataframe):</b></p><p /><p>
+      return rmse
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_1068836853FM"><div class="nodecontent">def graphics(unpack):</div></li>
+	<li class="basic" id="FMID_823521307FM"><div class="nodecontent">best_rmse_value(better_output, store_rmse)</div></li>
+	<li class="basic" id="FMID_838205947FM"><div class="nodecontent" style="color:#800080;font-size:117%;font-weight:bold;"> Best rmse value 4194.154621739153: K=default  Optimal feature: engine_size + fuel_type + highway_liters100Km + compression_ratio: </div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1689141607FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;"><h2 id="Best-5-features-k=5" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-weight: bold; line-height: 1; color: rgb(0, 0, 0); margin-top: 0; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; font-size: 21.994px; font-style: normal; letter-spacing: normal; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; background-color: rgb(255, 255, 255)"><font size="4">Best 5 features k=5 </font></h2></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1844861067FM"><div class="nodecontent"><p>
+      set_list_3 = []
+    </p><p>
+      set_list_2= ['highway_liters100Km','compression_ratio']
+    </p><p>
+      if len(set_list_2)&gt;0:
+    </p><p>
+          for erase in set_list_2:
+    </p><p>
+              list_col.remove(erase)
+    </p><p /><p>
+      set_list_3 = set_list_1 + set_list_2
+    </p><p /><p>
+      list_col
+    </p><p /><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">['symboling',
+ 'normalized_losses',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'horsepower',
+ 'peak_rpm',
+ 'city_liters100Km',
+ 'tara']</font></pre></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1942964224FM"><div class="nodecontent" style="color:#111111;">set_list_3 ['engine_size', 'fuel_type', 'highway_liters100Km', 'compression_ratio']</div></li>
+	<li class="col" id="FMID_253231447FM"><div class="nodecontent" style="color:#0033ff;"><p><b>def find_best_5features_K_default(list_col, set_list_3):</b></p><p /><p>
+      return lista_rmse_model_1, name_features_model_1
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1758647866FM"><div class="nodecontent" style="color:#800000;"><p><b>def knn_train_test_model_1(features, target_column_name, dataframe):</b></p><p /><p>
+      return rmse
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_1955612081FM"><div class="nodecontent">def graphics(unpack):</div></li>
+	<li class="basic" id="FMID_1357332771FM"><div class="nodecontent">best_rmse_value(better_output, store_rmse)</div></li>
+	<li class="basic" id="FMID_1839836753FM"><div class="nodecontent" style="font-size:117%;font-weight:bold;"> Best rmse value 4963.703694766741: K=default  Optimal feature: engine_size  + fuel_type  + highway_liters100Km  + compression_ratio  + city_liters100Km: </div></li></ul></li></ul></li>
+	<li class="col" id="FMID_227763206FM"><div class="nodecontent" style="font-size:100%;font-weight:bold;">Best Model Performance based on characteristics</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1810919599FM"><div class="nodecontent"><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3"><b>4194.154621739153 </b></font><font size="2">engine_size + 
+fuel_type + 
+highway_liters100Km + 
+compression_ratio </font><font size="3"><b>4303.751448698439</b></font><font size="2">engine_size + 
+fuel_type </font><font size="3"><b>4319.140524175805</b> </font><font size="2">engine_size </font><font size="3"><b>4733.628590394608</b> </font><font size="2">All features </font><font size="3"><b>4963.703694766741</b> </font><font size="2">engine_size +
+fuel_type +
+highway_liters100Km +
+compression_ratio +
+city_liters100K</font></pre></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_256239376FM"><div class="nodecontent" style="font-size:100%;"><p><b>Hyperparameter Tuning K=25</b></p><p>
+      store_K = {} 
+    </p><p>
+      best_rmse_value_K
+    </p></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_862685690FM"><div class="nodecontent" style="font-size:100%;font-weight:bold;"><p>
+      Engine size 4319
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_203203975FM"><div class="nodecontent"><p>
+      list_col = ['symboling','normalized_losses','fuel_type','aspiration','engine_location','num_cylinders',
+    </p><p>
+                  'engine_size','compression_ratio','horsepower','peak_rpm','highway_liters100Km',
+    </p><p>
+                  'city_liters100Km','tara']
+    </p></div></li>
+	<li class="basic" id="FMID_270447113FM"><div class="nodecontent"><p><font size="3">best_rmse_value_K(better_output, store_K) </font></p><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">Best rmse value: 4319.140524175805 optimal feature: engine_size K cicles = 25 best K=5 </font></pre><font size="3"><br class="Apple-interchange-newline" size="3" /></font></div></li>
+	<li class="col" id="FMID_315440418FM"><div class="nodecontent"><p><b><font color="#e6ac44">def test_Univariate_model_k13579(list_col):</font></b></p><p /><p>
+      graficos incluidos
+    </p><p /><p>
+      return lista_rmse_model_1, name_features_model_1, optimal_hp
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1739052390FM"><div class="nodecontent" style="color:#008080;"><p><b>def knn_train_test_model_2(features, target_column_name, dataframe, k):</b></p><p /><p>
+       return rmse, optimal_hp
+    </p></div></li></ul></li></ul></li>
+	<li class="col" id="FMID_809013512FM"><div class="nodecontent" style="font-size:100%;font-weight:bold;"><p>
+      Engine y fuel 4303
+    </p></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_964219414FM"><div class="nodecontent"><p><b>def find_best_2_features_K_25(list_col):</b></p><p /><p>
+      return lista_rmse_model_1, name_features_model_1, optimal_hp
+    </p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1277611777FM"><div class="nodecontent" style="color:#008080;"><p><b>def knn_train_test_model_2(features, target_column_name, dataframe, k):</b></p><p /><p>
+       return rmse, optimal_hp
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_1746650748FM"><div class="nodecontent">better_output = find_best_2_features_K_25(list_col)</div></li>
+	<li class="basic" id="FMID_1441289379FM"><div class="nodecontent">graphics(better_output)</div></li>
+	<li class="basic" id="FMID_236047898FM"><div class="nodecontent"><p>
+      best_rmse_value(better_output,store_K)
+    </p><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3"> Best rmse value 3779.1424612709548: K=default  Optimal feature: highway_liters100Km + engine_size: </font></pre><font size="3"><br class="Apple-interchange-newline" size="3" /></font></div></li></ul></li>
+	<li class="col" id="FMID_232888921FM"><div class="nodecontent"><p>
+      set_list_1= ['engine_size','fuel_type']
+    </p><p>
+      if len(set_list_1)&gt;0:
+    </p><p>
+          for erase in set_list_1:
+    </p><p>
+              list_col.remove(erase)
+    </p><p /><p>
+      list_col
+    </p><p /><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="3">['symboling',
+ 'normalized_losses',
+ 'aspiration',
+ 'engine_location',
+ 'num_cylinders',
+ 'compression_ratio',
+ 'horsepower',
+ 'peak_rpm',
+ 'highway_liters100Km',
+ 'city_liters100Km',
+ 'tara']</font></pre></div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1759652653FM"><div class="nodecontent" style="font-size:100%;font-weight:bold;">engine + fuel + high_litter+compress 4194</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1060847348FM"><div class="nodecontent"><p><b>def find_best_4_features_K_25(list_col, set_list):</b></p><p /><p>
+      return lista_rmse_model_1, name_features_model_1, optimal_hp
+    </p><p /></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_762584472FM"><div class="nodecontent" style="color:#008080;"><p><b>def knn_train_test_model_2(features, target_column_name, dataframe, k):</b></p><p /><p>
+       return rmse, optimal_hp
+    </p></div></li></ul></li>
+	<li class="basic" id="FMID_1435289951FM"><div class="nodecontent"><p><font size="2">best_rmse_value_K(better_output, store_K) </font></p><pre style="font-family: monospace; font-size: 14px; display: block; padding-top: 1px; padding-bottom: 1px; padding-right: 0px; padding-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; line-height: inherit; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-top-style: none; border-top-width: 0px; border-right-style: none; border-right-width: 0px; border-bottom-style: none; border-bottom-width: 0px; border-left-style: none; border-left-width: 0px; white-space: pre-wrap; vertical-align: baseline; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; word-spacing: 0px"><font size="2"><b>Best rmse value: 3779.1424612709548 </b>
+optimal feature: 
+engine_size + 
+fuel_type + 
+highway_liters100Km + 
+engine_location 
+K cicles = 25 best K=4</font></pre></div></li></ul></li></ul></li>
+	<li class="col" id="FMID_899511218FM"><div class="nodecontent"><p><b>graphics_performance(store_rmse)</b></p></div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_672362983FM"><div class="nodecontent"><p><img src="graph_perf.png" width="1000" height="400" /></p></div></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></li></ul></div></body></html>
