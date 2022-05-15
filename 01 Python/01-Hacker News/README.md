@@ -1,5 +1,7 @@
 ## [Hacker News](https://news.ycombinator.com/):
 
+ ![Y](https://s3.amazonaws.com/dq-content/354/hacker_news.jpg)
+
 As first steps we'll compare the **two main types of posts** `Ask HN` and `Show HN` to answer the following questions:
 
 - Do `Ask HN` or `Show HN` receive more **comments on average.**?
