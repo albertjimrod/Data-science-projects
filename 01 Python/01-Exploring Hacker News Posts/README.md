@@ -1,4 +1,4 @@
-## [Hacker News](https://news.ycombinator.com/):
+
 
  ![Y](https://s3.amazonaws.com/dq-content/354/hacker_news.jpg)
  
@@ -29,7 +29,7 @@ If your project has a lot of features, consider adding a "Features" section and 
 
 * * *
 
-## 1. Project's Title
+## [Hacker News](https://news.ycombinator.com/):
 
 
 ## 2. Project Description
