@@ -1,42 +1,75 @@
 ## [Hacker News](https://news.ycombinator.com/):
 
  ![Y](https://s3.amazonaws.com/dq-content/354/hacker_news.jpg)
+ 
+ 
+ 
+What is a README File?
 
-As first steps we'll compare the **two main types of posts** `Ask HN` and `Show HN` to answer the following questions:
+In simple words, we can describe a README file as a guide that gives users a detailed description of a project you have worked on.
 
-- Do `Ask HN` or `Show HN` receive more **comments on average.**?
+It is essential for you as a developer to know how to document your project by writing a README because:
 
-- Do **posts created at a certain time** receive more **comments on average.**?
-
-- What **type of comments on average** are the most abundant.
-
-- Analyze the **relationship** ( whether or not ) **between the time.**
-
-- **Which posts are created** and the **number of comments** they receive.
-
-- **Who are the most relevant authors** in `Ask_posts` or  `Show_posts` on the forum?.
-
-- **What are the most significant activity by user** in `Ask_posts` and in 'Show_posts`?
-
-- **Who has been the most voted**, when they was and what was the title of the post?
-
-___
-
-### Data dicctionary:
-
-- `id`: the unique identifier from Hacker News for the post
-
-- `title`: the title of the post
-
-- `url`: the URL that the posts links to, if the post has a URL
-
-- `num_points`: the number of points the post acquired, calculated as the total number of upvotes minus the total number of downvotes
-
-- `num_comments`: the number of comments on the post
-
-- `author`: the username of the person who submitted the post
-
-- `created_at`: the date and time of the post's submission
+It is the first file a person will see when they encounter your project, so it should be fairly brief but detailed.
+It will make your project standout from a bunch of others. Also be sure your project is good too.
+It will help you focus on what your project needs to deliver and how.
 
 
-Where to find the [dataset](https://www.kaggle.com/hacker-news/hacker-news-posts)
+Here are some guide questions that will help you out:
+
+
+- What was your motivation?
+- Why did you build this project?
+- What problem does it solve?
+- What did you learn?
+- What makes your project stand out?
+
+
+If your project has a lot of features, consider adding a "Features" section and listing them here.
+
+* * *
+
+## 1. Project's Title
+
+
+## 2. Project Description
+
+- What your application does,
+- Why you used the technologies you used,
+- Some of the challenges you faced and features you hope to implement in the future.
+
+
+## 3. Table of Contents (Optional)
+
+If your README is very long, you might want to add a table of contents to make it easy for users to navigate to different sections easily. It will make it easier for readers to move around the project with ease.
+
+
+## 4. How to Install and Run the Project
+ 
+If you are working on a project that a user needs to install or run locally in a machine like a "POS", you should include the steps required to install your project and also the required dependencies if any.
+
+Provide a step-by-step description of how to get the development environment set and running.
+
+
+## 5. How to Use the Project
+
+Provide instructions and examples so users/contributors can use the project. 
+This will make it easy for them in case they encounter a problem – they will always have a place to reference what is expected.
+
+You can also make use of visual aids by including materials like screenshots to show examples of the running project and also the structure and design principles used in your project.
+
+Also if your project will require authentication like passwords or usernames, this is a good section to include the credentials.
+
+## 6. Include Credits
+
+If you worked on the project as a team or an organization, list your collaborators/team members. You should also include links to their GitHub profiles and social media too.
+
+Also, if you followed tutorials or referenced a certain material that might help the user to build that particular project, include links to those here as well.
+
+This is just a way to show your appreciation and also to help others get a first hand copy of the project.
+
+## 7. Add a License
+
+For most README files, this is usually considered the last part. It lets other developers know what they can and cannot do with your project.
+ 
+ 
