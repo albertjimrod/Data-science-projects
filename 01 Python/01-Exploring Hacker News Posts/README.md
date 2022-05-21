@@ -1,12 +1,12 @@
  ![Y](https://s3.amazonaws.com/dq-content/354/hacker_news.jpg)
  
 
-## Profitable App Profiles for the App Store and Google Play Markets
+# Hacker News Post
 
 
 ## Project Description.
 
-It is intended to make a brief study of the community Hackernwes through the posts as well as the type of users that make it up, know which are the most frequent posts, which are the most voted by the community, who are the users who have more relevance in the community and what are their interventions in it.
+It is intended to make a brief study of the community [Hacker news](https://news.ycombinator.com/news) through the posts as well as the type of users that make it up to know which are the most frequent posts, which are the most voted by the community, who are the users who have more relevance in the community and what are their interventions in it.
 
 The main aim was working with variables, data types, lists, for loops, conditional statements, dictionaries, frequency tables, and functions in Python. By way of learning, building the functions to obtain the results has been very interesting and challenging.
 
@@ -33,5 +33,7 @@ Users submit Ask posts to ask the community a specific question, and users also 
 
 
 ## Installation and libraries:
+
+`python                    3.8.2`
 
 In the file `conda_list.txt` are all the function libraries that I have used.
