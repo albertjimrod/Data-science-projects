@@ -3,7 +3,7 @@
  ![Y](https://s3.amazonaws.com/dq-content/354/hacker_news.jpg)
  
 
-## [Hacker News](https://news.ycombinator.com/):
+## Profitable App Profiles for the App Store and Google Play Markets
 
 
 ## Project Description.
@@ -37,4 +37,3 @@ Users submit Ask posts to ask the community a specific question, and users also 
 ## Installation and libraries:
 
 In the file `conda_list.txt` are all the function libraries that I have used.
-
