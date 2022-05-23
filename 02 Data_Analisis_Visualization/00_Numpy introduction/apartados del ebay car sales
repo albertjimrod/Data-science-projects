@@ -1,0 +1,99 @@
+
+
+- What is the average mileage of the vehicles sold on this page?
+
+- What was the period in which the most vehicles were offered for sale on the site?
+
+- Which is the most offered brand? and which is the least?
+
+- What is the highest average number of kilometers per brand?
+
+- What is the most used type of fuel?
+
+- The most offered brands and the model of each brand?
+
+
+
+1. Exploring Data
+
+2. Cleaning Column Names
+
+3. Initial Exploration and Cleaning.
+
+- 1. Text columns where all or almost all values are the same.
+
+-2  Numeric data stored as text that needs to be cleaned:
+
+4. Exploring the odometer_km and price columns
+
+1. Exploring odometer_km:
+Number of differents values
+Descriptive statistics.
+list of top 10 km groups
+
+
+2. Exploring price_in_dollars:
+Number of differents values
+Descriptive statistics.
+list of top 10 km groups
+
+
+Exploring price_in_dollars outliers on the top of the list:
+
+High-end vehicles with a very high market value are appearing, will have to be reviewed.
+
+### So... finally what do we have to remove from this top list?
+
+
+Exploring price outliers on the botton of the list:
+
+
+5. Exploring the date columns
+
+
+7. Exploring Price by Brand
+
+Average price per vehicle brand
+
+Average number of kilometers per brand
+
+List of car brands by average price and average mileage
+
+8. Storing Aggregate Data in a DataFrame
+
+
+
+
+9. Next Steps
+
+9.1 Identify categorical data
+
+
+fuel_type column
+
+9.2 Convert dates into numerical data.
+
+
+9.3 Find the most common make/model combinations
+
+
+Model within each brand that is repeated more times within our data set, the order is given by the brand of the vehicle.
+9.4 Divide the odometer into groups
+
+
+9.4 How much cheaper are damaged cars than their undamaged counterparts?
+
+
+Conclusions
+
+
+
+
+
+
+
+
+
+
+
+
