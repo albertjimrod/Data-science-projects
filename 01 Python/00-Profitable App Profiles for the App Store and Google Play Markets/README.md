@@ -1,4 +1,4 @@
-README Google Apple apps
+
 
 ![header.jpg](header.jpg)
 
@@ -21,7 +21,7 @@ This means that the number of users of our apps determines our revenue for any g
  Collect and analyze data from each of the online stores to understand what type of apps are likely to attract more users is our main objective, for this we will need to take a series of steps.
 
  
-### 1. Exploring data </a>
+### 1. Exploring data
 
 ### 2. Data cleaning 
 
