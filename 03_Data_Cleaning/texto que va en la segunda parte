@@ -1,0 +1,71 @@
+
+## Combining the Data
+
+We're almost ready to combine our datasets! We've come a long way in this lesson -- we've gone from choosing a topic for a project to acquiring the data to having clean data that we're almost ready to combine.
+
+Along the way, we've learned how to:
+
+Handle files with different formats and columns
+Prepare to merge multiple files
+Use text processing to extract coordinates from a string
+Convert columns from strings to numbers
+You'll always learn something new while working on a real-world data science project. Each project is unique and there will always be quirks you don't quite know how to handle. The key is to be willing to try different approaches and to have a general framework in your head for how to move from Step A to Step B.
+
+we began investigating possible relationships between SAT scores and demographic factors. In order to do this, we acquired several datasets about New York City public schools. We manipulated these datasets and found that we could combine them using the **DBN** column. All of the datasets are currently stored as keys in the data dictionary. Each dataset is a pandas dataframe.
+
+In this lesson, we'll clean the data more, then combine it. Finally, we'll compute correlations and perform some analysis.
+
+**The first thing we'll need to do in preparation for the merge is condense some of the datasets.** we noticed that the values in the DBN column were unique in the sat_results data set. Other data sets like class_size had duplicate DBN values. We'll need to condense these datasets **so that each value in the DBN column is unique**.
+
+
+
+While the main dataset we want to analyze, sat_results, has unique DBN values for every high school in New York City, other datasets aren't as clean. A single row in the sat_results dataset may match multiple rows in the class_size dataset, for example. This situation creates problems, because we don't know which of the multiple entries in the class_size dataset we should combine with the single matching entry in sat_results. Here's a diagram that illustrates the problem:
+
+![condense_1](condense_1.png)
+
+<p>In the diagram above, we can't combine the rows from both datasets, because there are several cases where multiple rows in <code>class_size</code> match a single row in <code>sat_results</code>.</p>
+
+
+<p>To resolve this issue, we'll condense the <code>class_size</code>, <code>graduation</code> and <code>demographics</code> datasets so that each <code>DBN</code> is unique.</p>
+
+<p>The first dataset that we'll condense is <code>class_size</code>.  The first few rows of <code>class_size</code> look like this:</p>
+
+
+data["class_size"].head(5)
+
+
+<p>The first few rows pertain to the same school, which is why the <code>DBN</code> appears more than once.  It looks like each school has multiple values for <code>GRADE</code>, <code>PROGRAM TYPE</code>, <code>CORE SUBJECT (MS CORE and 9-12 ONLY)</code>, and <code>CORE COURSE (MS CORE and 9-12 ONLY)</code>.  </p>
+
+
+
+data["class_size"].info()
+
+data["class_size"].columns
+
+data["class_size"]["GRADE "].unique()
+
+
+
+<div>
+<p>Since we're dealing with high schools, we're only concerned with grades <code>9</code> through <code>12</code>. That means we only want to pick rows where the value in the <code>GRADE</code> column is <code>09-12</code>.</p>
+<p>If we look at the unique values for <code>PROGRAM TYPE</code>, we get the following:</p>
+</div>
+
+
+data["class_size"]["PROGRAM TYPE"].value_counts(dropna=False)ç
+
+
+### Condensing on `class_size` 
+<br>
+<p>Each school can have multiple program types.  Since <code>GEN ED</code> is the largest category by far, let's only select rows where <code>PROGRAM TYPE</code> is <code>GEN ED</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
